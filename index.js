@@ -79,6 +79,7 @@ function newGame() {
     renderFouls();
     renderPeriod();
     renderClock();
+    startTime();
 }
 
 // Period Timer Logic
