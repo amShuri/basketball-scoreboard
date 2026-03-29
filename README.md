@@ -10,7 +10,7 @@ Simple basketball scoreboard built to practice JavaScript fundamentals.
 ## Features
 
 * Score and foul tracking for home and guest teams
-* Game timer and period system (1–4)
+* Timer and period system (1–4)
 * Reset functionality and lead highlighting
 
 ## Credits
