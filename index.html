@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>SCOREBOARD</h1>
+            <div class="team-container">
+                <div class="team-card team-home" id="team-home">
+                    <h2 class="team-name bg-home">HOME</h2>
+                    <div class="team-panel">
+                        <div class="score-panel">
+                            <p id="home-score-el" class="score-tracker">0</p>
+                            <div class="score-controls">
+                                <button class="score-btn" onclick="addHomeScore(1)">+1</button>
+                                <button class="score-btn" onclick="addHomeScore(2)">+2</button>
+                                <button class="score-btn" onclick="addHomeScore(3)">+3</button>
+                            </div>
+                        </div>
+                            
+                        <div class="fouls-panel">
+                            <h3 class="fouls-label">Fouls: <span id="home-fouls-el">0</span></h3>
+                            <button class="fouls-btn" onclick="addHomeFoul()">+1</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-info">
+                    <p class="period-label">PERIOD</p>
+                    <p class="period-tracker" id="period-tracker-el">1</p>
+                    
+                    <p class="clock" id="clock-el">12:00</p>
+                    
+                    <button class="new-game-btn" id="new-game-btn" onclick="newGame()">↺ New Game</button>
+                </div>
+                
+                <div class="team-card team-guest" id="team-guest">
+                    <h2 class="team-name bg-guest">GUEST</h2>
+                    <div class="team-panel">
+                        <div class="score-panel">
+                            <p id="guest-score-el" class="score-tracker">0</p>
+                            <div class="score-controls">
+                                <button class="score-btn" onclick="addGuestScore(1)">+1</button>
+                                <button class="score-btn" onclick="addGuestScore(2)">+2</button>
+                                <button class="score-btn" onclick="addGuestScore(3)">+3</button>
+                            </div>
+                        </div>
+
+                        <div class="fouls-panel">
+                            <h3 class="fouls-label">Fouls: <span id="guest-fouls-el">0</span></h3>
+                            <button class="fouls-btn" onclick="addGuestFoul()">+1</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

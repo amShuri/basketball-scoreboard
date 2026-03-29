@@ -1,0 +1,220 @@
+body {
+    background: radial-gradient(#1E293B, #020617);
+    margin: 0 10px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #E2E8F0;
+}
+
+h1, h2, h3, p, button {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+h1::after {
+    content: "";
+    background: #334155;
+    border-radius: 2px;
+    display: block;
+    margin: 4px auto 20px;
+    height: 2px;
+    width: 75px;
+}
+
+button {
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+.container {
+    background-color: #0F172A;
+    border: 1px solid #1E293B;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 700px;
+    padding: 35px 20px;
+}
+
+/* Teams Cards */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-panel {
+    margin: 15px 10px;
+    padding: 15px 45px;
+}
+
+.team-card {
+    background: #1E293B;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.team-name {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    margin: 0;
+    opacity: 0.95;
+    padding: 16px;
+}
+
+/* Score & Fouls Panels */
+.score-controls {
+    margin: 20px 0;
+    display: flex;
+    gap: 8px;
+}
+
+.score-tracker {
+    background-color: #020617;
+    border-radius: 6px;
+    color: #FFDB4C;
+    font-size: 56px;
+    font-weight: bold;
+    padding: 30px 10px;
+    text-shadow: 0 0 10px rgba(250, 204, 21, 0.4);
+}
+
+.fouls-panel {
+    opacity: 0.85;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.fouls-label {
+    color: #94A3B8;
+}
+
+.fouls-label,
+.fouls-btn {
+    font-size: 14px;
+}
+
+/* Home & Guest Buttons */
+.score-btn,
+.fouls-btn {
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 8px 12px;
+}
+
+.fouls-btn {
+    background: none;
+    padding: 5px 8px;
+}
+
+.team-home .score-btn,
+.team-home .fouls-btn {
+    background: rgba(37, 99, 235, 0.125);
+    color: #93C5FD;
+}
+
+.team-home .score-btn:hover,
+.team-home .fouls-btn:hover {
+    background: rgba(37, 99, 235, 0.5);
+    color: #BFDBFE;
+}
+
+.team-guest .score-btn,
+.team-guest .fouls-btn {
+    background: rgba(239, 68, 68, 0.165);
+    color: #FCA5A5;
+}
+
+.team-guest .score-btn:hover,
+.team-guest .fouls-btn:hover {
+    background: rgba(239, 68, 68, 0.5);
+    color: #FEE2E2;
+}
+
+/* Game Info Section (Period, Timer & New Game button) */
+.game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.period-label {
+    color: #94A3B8;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: -8px;
+}
+
+.period-tracker {
+    color: #E2E8F0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.clock {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #E2E8F0;
+}
+
+.score-tracker,
+.period-tracker,
+.clock {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.new-game-btn {
+    background: transparent;
+    border: 1px solid #334155;
+    border-radius: 50px;
+    color: #94A3B8;
+    font-size: 13px;
+    padding: 6px 14px;
+    transition: all 0.2s ease;
+}
+
+.new-game-btn:hover {
+    background: #1E293B;
+    border-color: #475569;
+}
+
+/* Background Colors for Home & Guest Banners */
+.bg-home {
+    background: linear-gradient(180deg, #1D4ED8, #1E40AF);
+}
+
+.bg-guest {
+    background: linear-gradient(180deg, #DC2626, #991B1B);
+}
+
+/* Utility Classes */
+.team-home.leading {
+    box-shadow: 0 0 16px 5px rgba(37, 99, 235, 0.25);
+}
+
+.team-guest.leading {
+    box-shadow: 0 0 16px 5px rgba(220, 38, 38, 0.35);
+}
+
+.score-tracker.leading {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.35);
+}
