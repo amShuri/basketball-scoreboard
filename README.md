@@ -1,11 +1,5 @@
 # Basketball Scoreboard
-Simple basketball scoreboard built to practice JavaScript fundamentals.
-
-## Built With
-
-* HTML
-* CSS
-* JavaScript
+Simple Basketball Scoreboard built with HTML, CSS & JavaScript to practice fundamentals.
 
 ## Features
 
